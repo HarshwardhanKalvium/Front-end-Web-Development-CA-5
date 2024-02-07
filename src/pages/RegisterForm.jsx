@@ -22,7 +22,7 @@ const RegisterForm = () => {
     e.preventDefault();
     setSubmit(true);
 
-    // Check if checkbox is checked before validating
+    
     if (!isCheckboxChecked) {
       alert('You have to agree to terms and conditions to register');
       return;
@@ -39,10 +39,10 @@ const RegisterForm = () => {
     ) {
       setValidate(true);
 
-      // Use setTimeout to delay the redirection
+      
       setTimeout(() => {
-        navigate('/'); // Use navigate instead of history.push
-      }, 1000); // 2000 milliseconds (2 seconds)
+        navigate('/'); 
+      }, 1000);
     }
   };
 
